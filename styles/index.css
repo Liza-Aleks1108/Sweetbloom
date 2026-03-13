@@ -1,0 +1,272 @@
+/* Header and nabigation for all pages */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 10px rgba(238, 87, 188, 0.3);
+}
+
+.navbar a.logo img {
+  height: 70px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-menu li a {
+  color: #fcb7ce;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: medium;
+  font-family: "Arial", sans-serif;
+  transition:
+    color 0.3s,
+    transform 0.3s;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a:focus {
+  color: #f96395;
+  transform: scale(1.05);
+}
+
+.nav-menu li a.active {
+  border-bottom: 2px solid #fcb7ce;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .nav-menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+/* General styles */
+h2 {
+  color: #fcb7ce;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #555;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+/* Hero */
+.hero {
+  height: 75vh;
+  background:
+    linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)),
+    url("../images/hero/hero.png");
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  color: #fcb7ce;
+}
+
+.hero-text p {
+  margin: 15px 0 30px;
+}
+
+.hero-btn,
+.calltoaction-btn {
+  background: #fcb7ce;
+  color: white;
+  padding: 12px 28px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero-btn:hover,
+.hero-btn:focus,
+.calltoaction-btn:hover,
+.calltoaction-btn:focus {
+  background: #ff6fa3;
+}
+
+/* About us */
+.about {
+  max-width: 900px;
+  margin: 60px auto;
+  text-align: center;
+}
+
+/* Categories */
+.categories {
+  padding: 60px 20px;
+  background: #fff7fa;
+  text-align: center;
+}
+
+.categories h2 {
+  margin-bottom: 40px;
+}
+
+.categories-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.category-card {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.category-card h3 {
+  font-size: 22px;
+  color: #fcb7ce;
+}
+
+/* Why us */
+.why-us {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.why-us h2 {
+  margin-bottom: 40px;
+}
+
+.why-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.why-card {
+  background: #fff0f5;
+  padding: 25px;
+  border-radius: 15px;
+}
+
+/* Review */
+.reviews {
+  padding: 70px 20px;
+  background: #fff7fa;
+  text-align: center;
+}
+
+.reviews h2 {
+  margin-bottom: 10px;
+}
+
+.reviews p {
+  margin-bottom: 40px;
+}
+
+.reviews-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.review-card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(238, 87, 188, 0.5);
+  transition: 0.3s;
+}
+
+.review-card:hover {
+  transform: translateY(-5px);
+}
+
+.review-card h4 {
+  margin-top: 15px;
+  color: #fcb7ce;
+}
+
+/* Call to action */
+.calltoaction {
+  background: white;
+  padding: 60px 20px;
+  text-align: center;
+  color: #fcb7ce;
+}
+
+.site-footer {
+  background: #fff0f5;
+  margin-top: 20px;
+  padding-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  gap: 40px;
+  /* padding: 20px; */
+}
+
+.site-footer h2 {
+  color: #FCB7CE;
+}
+
+.site-footer h3 {
+  color: #FCB7CE;
+  margin-bottom: 10px;
+}
+
+.site-footer p {
+  color: #555;
+  margin-bottom: 6px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 22px;
+  color: #FCB7CE;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff6fa3;
+  transform: scale(1.2);
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 15px;
+  border-top: 1px solid #f3d3dd;
+  margin-top: 20px;
+  font-size: 14px;
+}

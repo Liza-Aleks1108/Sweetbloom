@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Order</title>
+  </head>
+
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  <link rel="stylesheet" href="../styles/order.css" />
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="../index.html" class="logo">
+          <img
+            src="../images/logo/Screenshot 2026-03-10 151927.png"
+            alt="Sweet Bloom"
+          />
+        </a>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./cakes.html">Cakes</a></li>
+          <li><a href="./flavors.html">Flavors</a></li>
+          <li><a href="#" class="active">How to Order</a></li>
+          <li><a href="./bakers.html">Our Bakers</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>How to Order Your Cake</h1>
+      <p>
+        Thank you for choosing Sweet Bloom. Each cake is handmade to order and
+        designed especially for your celebration.
+      </p>
+
+      <!-- How to Place an Order -->
+      <h2>How to Place an Order</h2>
+      <p>
+        To order a your custom cake, please fill in the order form on this page
+        or contact us via email. When ordering, please include the date of the
+        event, number of servings, preferred flavor, and design ideas.
+      </p>
+      <p>
+        All cakes are made to order and priced individually depending on size,
+        flavor, decoration, and complexity of the design.
+      </p>
+
+      <!-- Ordering Time -->
+      <h2>Ordering Time</h2>
+      <p>We recommend placing your order at least:</p>
+      <ul>
+        <li>3–4 weeks in advance for wedding cakes</li>
+        <li>1–2 weeks in advance for celebration cakes</li>
+        <li>5–7 days in advance for bento cakes</li>
+      </ul>
+      <p>Last-minute orders may be accepted depending on availability.</p>
+
+      <!-- Payment -->
+      <h2>Payment</h2>
+      <p>
+        A 20% deposit is required to confirm your order. The remaining balance
+        must be paid before collection or delivery.
+      </p>
+      <p>Payments can be made via bank transfer, card payment, or cash.</p>
+      <p>
+        Please note that your order is not confirmed until the deposit has been
+        received.
+      </p>
+
+      <!-- Allergy Information -->
+      <h2>Allergy Information</h2>
+      <p>
+        Our cakes are made in a kitchen that handles the following allergens:
+        Gluten, Eggs, Milk, Nuts, Peanuts, Soy, and Sesame.
+      </p>
+      <p>
+        If you have any allergies or dietary requirements, please inform us when
+        placing your order.
+      </p>
+
+      <!-- Available Cake Flavors -->
+      <h2>Available Cake Flavors</h2>
+      <ul>
+        <li>Alentejo</li>
+        <li>Blueberry Orange</li>
+        <li>Forest Berry</li>
+        <li>Lavender Blueberry</li>
+        <li>Passionfruit Pineapple</li>
+        <li>Raffaello</li>
+        <li>Red Velvet</li>
+        <li>Strawberry Basil</li>
+      </ul>
+
+      <!-- Order Form -->
+      <section class="order-form-section">
+        <h2>Order Your Cake</h2>
+        <p>
+          Please fill out the form below and we will get back to you as soon as
+          possible.
+        </p>
+
+        <form class="order-form">
+          <label for="cake-type">Cake Type:</label>
+          <select id="cake-type" name="cake-type" required>
+            <option value="">--Select Cake Type--</option>
+            <option value="wedding">Wedding Cake</option>
+            <option value="birthday">Birthday Cake</option>
+            <option value="corporate">Corporate Cake</option>
+            <option value="kids">Kids' Cake</option>
+            <option value="bento">Bento Cake</option>
+          </select>
+
+          <label for="flavor">Cake Flavor:</label>
+          <select id="flavor" name="flavor" required>
+            <option value="">--Select Flavor--</option>
+            <option value="Alentejo">Alentejo</option>
+            <option value="Blueberry Orange">Blueberry Orange</option>
+            <option value="Forest Berry">Forest Berry</option>
+            <option value="Lavender Blueberry">Lavender Blueberry</option>
+            <option value="Passionfruit Pineapple">
+              Passionfruit Pineapple
+            </option>
+            <option value="Raffaello">Raffaello</option>
+            <option value="Red Velvet">Red Velvet</option>
+            <option value="Strawberry Basil">Strawberry Basil</option>
+          </select>
+
+          <label for="names">Your Name / Couple Names:</label>
+          <input
+            type="text"
+            id="names"
+            name="names"
+            placeholder="Pavlo & Anna"
+            required
+          />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            required
+          />
+
+          <label for="phone">Phone:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+353874726058"
+            required
+          />
+
+          <label for="date">Event Date:</label>
+          <input type="date" id="date" name="date" required />
+
+          <label for="location">Event Location:</label>
+          <input
+            type="text"
+            id="location"
+            name="location"
+            placeholder="Killarney National Park"
+            required
+          />
+
+          <label for="guests">Number of Guests (approx.):</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            placeholder="12"
+            min="1"
+            required
+          />
+
+          <label for="message">Additional Notes / Special Requests:</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="5"
+            placeholder="Describe your cake ideas..."
+            required
+          ></textarea>
+
+          <button type="submit">Send Enquiry</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <h2>Sweet Bloom</h2>
+          <p>Handcrafted cakes made with love for every celebration.</p>
+        </div>
+
+        <div class="footer-contact">
+          <h3>Contact</h3>
+          <p><strong>Email:</strong> sweetbloom@gmail.com</p>
+          <p><strong>Phone:</strong> +353 89 476 6057</p>
+          <p><strong>Location:</strong> Kerry, Ireland</p>
+        </div>
+
+        <div class="footer-hours">
+          <h3>Opening Hours</h3>
+          <p>Monday – Friday: 8:00 – 20:00</p>
+          <p>Saturday: 10:00 – 16:00</p>
+          <p>Sunday: Closed</p>
+        </div>
+
+        <div class="footer-social">
+          <h3>Follow Us</h3>
+
+          <div class="social-icons">
+            <a
+              href="https://www.instagram.com/lizaa_aleks?igsh=bGlyYTc5bWZrcmZ3&utm_source=qr"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://www.facebook.com/share/1AzQHWhmpN/?mibextid=wwXIfr"
+            >
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a
+              href="https://www.tiktok.com/@lizaaleks1108?_r=1&_t=ZS-94eVuQFwfno"
+            >
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 Sweet Bloom. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>
